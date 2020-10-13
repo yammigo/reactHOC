@@ -105,6 +105,5 @@ class Example extends React.Component {
 
 const EnhancedExample = Reform(Example)
 //const EnhancedExample = Example
-
 ReactDOM.render(<EnhancedExample/>, document.getElementById('root'))
 ReactDOM.render(<EnhancedExample/>, document.getElementById('root'))

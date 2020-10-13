@@ -1,15 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
 // Props Proxy with ref demonstration
-
 function PPHOC(WrappedComponent) {
   return class PP extends React.Component {
     constructor(props) {
       super(props)
       this.state = { name: '' }
 
-      this.updateName = this.updateName.bind(this)
+      this.updateName = this.updateName.bind(this);
     }
 
     updateName(instance) {
