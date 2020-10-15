@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
 // Props Proxy demonstration
-
 function PPHOC(WrappedComponent) {
   return class PP extends React.Component {
     render() {
@@ -17,10 +15,10 @@ function PPHOC(WrappedComponent) {
   }
 }
 
-
 class Example extends React.Component {
   render() {
     return (
+      <>
       <div>
         <p>
           As you can see, all original props (date), are being passed through or proxied,
@@ -28,6 +26,7 @@ class Example extends React.Component {
         </p>
         <pre>{JSON.stringify(this.props, null, 2)}</pre>
       </div>
+      </>
     )
   }
 }

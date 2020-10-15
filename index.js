@@ -78,10 +78,10 @@ function Reform(WrappedComponent) {
 
     }
     render() {
-      debugger
+      // debugger
       let r = React.createElement(WrappedComponent, Object.assign({},this.props, {ref: 'test'}), null)
       let i = this.refs.test
-
+      console.log(i);
       return r
     }
   }
@@ -91,6 +91,7 @@ function Reform(WrappedComponent) {
 class Example extends React.Component {
   constructor(props) {
     super(props)
+    this.name='fanjiantao'
   }
   method() {}
   render() {
@@ -106,4 +107,4 @@ class Example extends React.Component {
 const EnhancedExample = Reform(Example)
 //const EnhancedExample = Example
 ReactDOM.render(<EnhancedExample/>, document.getElementById('root'))
-ReactDOM.render(<EnhancedExample/>, document.getElementById('root'))
+// ReactDOM.render(<EnhancedExample/>, document.getElementById('root'))

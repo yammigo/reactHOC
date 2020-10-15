@@ -4,11 +4,13 @@
   "description": "React Higher Order Components examples",
   "main": "index.js",
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "run-js": "1.3.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "run-js"
+    "start": "run-js index.js"
   },
   "author": "",
   "license": "MIT"

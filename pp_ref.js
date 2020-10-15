@@ -41,7 +41,7 @@ function PPHOC(WrappedComponent) {
 class Example extends React.Component {
   constructor(props) {
     super(props)
-    this.instanceName = 'han solo'
+    this.instanceName = '测试名称'
   }
   render() {
     return (
